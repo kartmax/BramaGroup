@@ -1,0 +1,122 @@
+.consultation {
+  background: url("../img/bg-consult.jpg") center center no-repeat;
+  background-size: cover;
+
+
+  .padd-wrap {
+    padding-top: 120px;
+    padding-bottom: 130px;
+  }
+
+  .wrap {
+    max-width: 1145px;
+    width: 100%;
+    flex-flow: nowrap;
+
+    @media only screen and (max-width : 900px){
+      flex-flow: wrap;
+      justify-content: center;
+    }
+  }
+
+  .content {
+    max-width: 675px;
+    width: 100%;
+
+    @media only screen and (max-width : 900px){
+      max-width: 100%;
+    }
+  }
+
+  .capt {
+    color: #ffffff;
+    @include fontSize(25px);
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .text {
+    @include fontSize(19px);
+    color: #c8c8c8;
+    font-weight: 400;
+    text-align: justify;
+  }
+  .conditions {
+    @include fontSize(19px);
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 2;
+    text-align: justify;
+    margin-top: 40px;
+  }
+
+  #form-consult {
+    margin-left: 15px;
+    background: #fff;
+    padding: 60px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 8px 15px 90px 0px rgba(0, 0, 0, 0.11);
+    display: flex;
+    flex-flow: column;
+
+    @media only screen and (max-width : 900px){
+      margin-top: 20px;
+      margin-left: 0;
+      max-width: 100%;
+    }
+    @media only screen and (max-width : 650px){
+      padding: 30px 15px;
+    }
+  }
+  input {
+    height: 55px;
+    margin-bottom: 15px;
+  }
+  .bg {
+    background: #f1f1f1;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d7d7d7;
+    border-left: none;
+    padding-right: 10px;
+  }
+  .time {
+    margin-top: 7px;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    input {
+      position: relative;
+      margin-bottom: 0;
+      margin-left: 20px;
+      background: #f1f1f1;
+      max-width: 90px;
+      width: 100%;
+    }
+  }
+  textarea {
+    line-height: 21px;
+    margin-bottom: 30px;
+    height: 135px;
+  }
+  input, textarea {
+    border: 1px solid #d7d7d7;
+    font-family: Roboto;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    padding: 20px;
+  }
+  #datetimepicker {
+    border-right: none;
+  }
+  .btn-base {
+    max-width: 290px;
+    border: none;
+    outline: none;
+  }
+}

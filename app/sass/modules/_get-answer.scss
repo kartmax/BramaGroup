@@ -1,0 +1,70 @@
+.get-answer {
+  position: relative;
+  background: url("../img/bg-get-answer.jpg") center center no-repeat;
+  background-size: cover;
+
+  .padd-wrap {
+    padding-top: 120px;
+    padding-bottom: 115px;
+  }
+  
+  p {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5625rem;
+
+    @media only screen and (max-width : 1040px) {
+
+      text-align: center;
+    }
+  }
+
+  .wrap {
+
+    max-width: 970px;
+    z-index: 2;
+
+  }
+  img {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 1;
+  }
+  form {
+    width: 100%;
+    min-height: 55px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+
+    @media only screen and (max-width : 1040px) {
+      flex-flow: column;
+      align-items: center;
+    }
+
+  }
+  input {
+    max-width: 350px;
+    width: 100%;
+    height: 55px;
+    background: #fff;
+    border: none;
+    padding-left: 20px;
+    color: #212121;
+    margin-bottom: 15px;
+
+
+    &::-webkit-input-placeholder {
+      color: #212121;
+    }
+  }
+
+  .btn-base {
+    outline: none;
+    border: none;
+  }
+
+}

@@ -1,0 +1,106 @@
+.fallacy-5 {
+  background: url("../img/bg-fall-5.jpg") center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  
+  .answer {
+    color: #c8c8c8;
+    font-weight: 500;
+  }
+
+  .fall {
+    background: #11ab9f;
+  }
+
+  .white-block {
+    position: relative;
+    background: #fff;
+    padding: 50px 40px 25px;
+    margin-bottom: 60px;
+
+
+    .answer {
+      color: #606060;
+    }
+
+    .btn-base {
+      max-width: 270px;
+    }
+
+
+    .top-border {
+      position: absolute;
+      top: 15px;
+      left: -10px;
+      width: calc(100% + 20px);
+      height: 1px;
+      border: none;
+      border-top: 1px solid #fff;
+    }
+    .bottom-border {
+      position: absolute;
+      bottom: -15px;
+      left: -10px;
+      width: calc(100% + 20px);
+      height: 1px;
+      border: none;
+      border-top: 1px solid #fff;
+    }
+    .left-border {
+      position: absolute;
+      bottom: -15px;
+      left: -10px;
+      height: 100%;
+      width: 1px;
+      border: none;
+      border-left: 1px solid #fff;
+    }
+    .right-border {
+      position: absolute;
+      bottom: -15px;
+      right: -10px;
+      height: 100%;
+      width: 1px;
+      border: none;
+      border-left: 1px solid #fff;
+    }
+  }
+
+  ul {
+    list-style: disc;
+    margin-left: 50px;
+    margin-bottom: 30px;
+  }
+  li {
+    font-size: 1.1875rem;
+    color: #11ab9f;
+    font-weight: 500;
+    text-align: justify;
+
+    span {
+      color: #c8c8c8;
+    }
+  }
+  .solutions {
+    color: #fff;
+  }
+  .variant-solush {
+    justify-content: flex-start;
+    .number {
+      border: 1px solid #babbbc;
+      margin-left: 0;
+      p {
+        color: #fff;
+      }
+    }
+    .text {
+      color: #fff;
+      .notes {
+        font-style: italic;
+        font-weight: 400;
+        margin-top: 30px;
+      }
+    }
+  }
+
+}

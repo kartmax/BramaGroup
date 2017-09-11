@@ -1,0 +1,47 @@
+.gold-words.wrap {
+  flex-flow: nowrap;
+  max-width: 1110px;
+
+  @media only screen and (max-width : 992px){
+    flex-flow: column;
+  }
+
+
+  img {
+    margin-right: -140px;
+    max-width: 100%;
+
+    @media only screen and (max-width : 1350px) {
+      margin-right: 0;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    max-width: 905px;
+    text-align: justify;
+    line-height: 2;
+  }
+  .caption {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #006b63;
+    text-transform: uppercase;
+  }
+  .text {
+    margin: 40px 0;
+    font-size: 1.19rem;
+    font-style: italic;
+    color: #606060;
+    span {
+      font-weight: 500;
+    }
+  }
+  .author {
+    align-self: flex-end;
+    font-size: 1.19rem;
+    font-style: italic;
+  }
+}

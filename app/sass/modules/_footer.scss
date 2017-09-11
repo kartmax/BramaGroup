@@ -1,0 +1,140 @@
+footer {
+  .top-foot {
+    background: url("../img/bg-top-foot.jpg") center center no-repeat;
+    background-size: cover;
+    margin-bottom: -1px;
+  }
+  .padd-wrap {
+    padding-top: 100px;
+    padding-bottom: 190px;
+  }
+  .block-foot {
+    max-width: 1140px;
+    display: flex;
+    flex-flow: wrap;
+    margin: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media only screen and (max-width : 700px){
+      flex-flow: column;
+      align-items: center;
+    }
+  }
+  .logo {
+    margin-bottom: 40px;
+    @media only screen and (max-width : 992px){
+      flex-basis: 100%;
+    }
+    @media only screen and (max-width : 700px){
+      align-self: center;
+
+    }
+  }
+
+  .item-foot {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 30px;
+
+    font-family: Roboto;
+    color: #919191;
+    @include fontSize(14px);
+    font-weight: 400;
+    text-align: left;
+
+    @media only screen and (max-width : 700px){
+      width: 250px;
+
+    }
+
+    a {
+      font-family: Roboto;
+      color: #919191;
+      @include fontSize(14px);
+      font-weight: 400;
+      text-align: left;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+    img {
+      margin-right: 10px;
+    }
+    .adress {
+      display: flex;
+      align-items: flex-start;
+      .text {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  h4 {
+    color: #fff;
+    @include fontSize(16px);
+    font-weight: 500;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .bottom-foot {
+    background-color:  #002e5b;
+    padding: 30px 20px;
+    p {
+      font-family: 'Myriad Pro';
+      color: #919191;
+      @include fontSize(13px);
+      font-weight: 400;
+      text-align: center;
+    }
+    .text {
+      position: relative;
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+
+  #back-top {
+    position: absolute;
+    top: -58px;
+    right: -100px;
+    background: #919191;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+    transform: rotate(45deg);
+
+    @media only screen and (max-width : 1500px){
+      right: 2%;
+    }
+    @media only screen and (max-width : 930px){
+      width: 40px;
+      height: 40px;
+      top: -52px;
+    }
+
+    a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: rotate(45deg);
+      text-decoration: none;
+      i {
+        color: #1d3957;
+        @include fontSize(25px);
+
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.positive-experience {
+  background: url("../img/bg-positive.png") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .padd-wrap {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  p {
+    color:  #fff;
+    font-weight: 500;
+    font-size: 1.5625rem;
+    margin-bottom: 46px;
+  }
+}

@@ -1,0 +1,92 @@
+.how-to-work {
+  max-width: 1545px;
+  width: 100%;
+  display: flex;
+  margin: auto;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  .padd-wrap {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .number {
+    color: #606060;
+    @include fontSize(60px);
+    font-weight: 400;
+    line-height: 31px;
+    align-self: center;
+    margin-right: 30px;
+
+
+    @media only screen and (max-width : 1350px){
+      @include fontSize(48px);
+    }
+    @media only screen and (max-width : 480px){
+      margin-bottom: 20px;
+      margin-right: 0;
+      align-self: flex-start;
+    }
+
+  }
+  .text {
+    color: rgba(0, 107, 99, 0.6);
+    @include fontSize(19.99px);
+    font-weight: 400;
+    line-height: 31px;
+    transform: scaleY(1.0004);
+    text-align: left;
+    align-self: center;
+
+    @media only screen and (max-width : 480px){
+      align-self: flex-start;
+    }
+  }
+
+  .row-work {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .item {
+    align-self: stretch;
+    flex: 1 33%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: 150px;
+
+    @media only screen and (max-width : 1080px) {
+      flex: 1 50%;
+      margin-bottom: 50px;
+    }
+    @media only screen and (max-width : 768px) {
+      flex: 1 100%;
+      justify-content: center;
+
+    }
+  }
+
+  .cell {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @media only screen and (max-width : 768px) {
+      width: 70%;
+      //justify-content: center;
+    }
+    @media only screen and (max-width : 550px) {
+      width: 100%;
+      //justify-content: center;
+    }
+    @media only screen and (max-width : 480px){
+      flex-flow: column;
+      width: 70%;
+      //align-items: center;
+    }
+  }
+}
